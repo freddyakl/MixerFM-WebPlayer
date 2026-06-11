@@ -481,6 +481,12 @@ if (isset($_GET['action']) && $_GET['action'] === 'metadata') {
                              referrerpolicy="no-referrer"
                              onerror="this.onerror=null; this.src='og.jpg';">
                         
+                        <!-- Transparent Watermark on Top Right of Album Cover -->
+                        <img src="/wm.png" 
+                             alt="Watermark Logo" 
+                             class="absolute top-4 right-4 w-12 h-10 object-contain z-10 pointer-events-none opacity-85 select-none filter drop-shadow-[0_2px_4px_rgba(0,0,0,0.5)]"
+                             referrerpolicy="no-referrer">
+
                         <!-- Elegant hover overlay (No central circle elements) -->
                         <div id="albumSpinOverlay" class="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col items-center justify-center gap-2.5 z-20">
                             <svg id="hoverIconSVG" class="w-12 h-12 text-primary fill-current" viewBox="0 0 24 24">
@@ -1096,6 +1102,7 @@ if (isset($_GET['action']) && $_GET['action'] === 'metadata') {
                 }, 250);
             }
         }
+        window.toggleLyricsModal = toggleLyricsModal;
 
         // Direct fetch iTunes API for reliable 600x600 size artwork
         async function updateArtwork(artist, title) {

@@ -737,6 +737,14 @@ export default function App() {
                     />
                   </AnimatePresence>
 
+                  {/* Transparent Watermark on Top Right of Album Cover */}
+                  <img 
+                    src="/wm.png" 
+                    alt="Watermark Logo" 
+                    className="absolute top-4 right-4 w-12 h-10 object-contain z-10 pointer-events-none opacity-85 select-none drop-shadow-[0_2px_4px_rgba(0,0,0,0.5)]" 
+                    referrerPolicy="no-referrer"
+                  />
+
                   {/* Elegant micro hover overlay indicating action status (no circle in middle) */}
                   <div className="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col items-center justify-center gap-2.5 z-20">
                     {player.isPlaying ? (
