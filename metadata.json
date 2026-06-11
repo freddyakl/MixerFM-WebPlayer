@@ -1,0 +1,6 @@
+{
+  "name": "Mixer FM",
+  "description": "A high-fidelity premium dark-mode Icecast stream player with dynamic iTunes album art, visualizer, playback history, and server-ready PHP deployment code.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

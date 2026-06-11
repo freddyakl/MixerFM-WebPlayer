@@ -1,0 +1,30 @@
+{
+  "name": "Mixer FM",
+  "short_name": "Mixer FM",
+  "description": "Mixer FM - High definition live audio stream player",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0a0a0a",
+  "theme_color": "#00F0FF",
+  "orientation": "any",
+  "icons": [
+    {
+      "src": "/og.jpg",
+      "sizes": "192x192",
+      "type": "image/jpeg",
+      "purpose": "any"
+    },
+    {
+      "src": "/og.jpg",
+      "sizes": "512x512",
+      "type": "image/jpeg",
+      "purpose": "any"
+    },
+    {
+      "src": "/og.jpg",
+      "sizes": "512x512",
+      "type": "image/jpeg",
+      "purpose": "maskable"
+    }
+  ]
+}
